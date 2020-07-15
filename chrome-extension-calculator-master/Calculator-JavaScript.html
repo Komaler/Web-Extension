@@ -1,51 +1,95 @@
-<html>
-	<head>
-		<title>Calculator</title>
-		<style>
-			button{
-				width:100%;
-				height:100%;
-			}
-		</style>
-		
-	</head>
-	<body>
-		<center>
-			<table border="0">
-				<tr>
-					<td colspan=4 style="text-align:center">CALCULATOR</td>
-				</tr>
-				<tr>
-					<td colspan=3><input type="text" id="input" placeholder="0" value="0"/></td>
-					<td><button type="button" id="clear">C</button></td>
-				</tr>
-				<tr>
-					<td><button type="button" value="7" id="seven">7</button></td>
-					<td><button type="button" value="8" id="eight">8</button></td>
-					<td><button type="button" value="9" id="nine">9</button></td>
-					<td><button type="button" value="/" id="division">/</button></td>
-				</tr>
-				<tr>
-					<td><button type="button" value="4" id="four">4</button></td>
-					<td><button type="button" value="5" id="five">5</button></td>
-					<td><button type="button" value="6" id="six">6</button></td>
-					<td><button type="button" value="*" id="multiply">*</button></td>
-				</tr>
-				<tr>
-					<td><button type="button" value="1" id="one">1</button></td>
-					<td><button type="button" value="2" id="two">2</button></td>
-					<td><button type="button" value="3" id="three">3</button></td>
-					<td><button type="button" value="-" id="subtraction">-</button></td>
-				</tr>
-				<tr>
-					<td><button type="button" value="0" id="zero">0</button></td>
-					<td><button type="button" value="." id="dot">.</button></td>
-					<td><button type="button" id="equals">=</button></td>
-					<td><button type="button" value="+" id="addition">+</button></td>
-				</tr>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Calculator">
+    <meta name="keywords" content="Calculator, calci">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style/calculator.css">
 
-			</table>
-		</center>
-		<script type="text/javascript" src="Calculator-JavaScript.js"></script>
-	</body>
+  </head>
+  <body>
+
+
+    <form name="bmiForm" id="form1" style="display:none">
+      <div style=" padding:5px;">
+       <label style="color:white; " >Weight(kg)</label>
+      </div>
+      <div style="padding:5px;">
+       <input type="text" style="background: #ffffff; color:black; width:200px; height:30px; border-radius: 4px; padding:2px;" name="weight" size="10">
+      </div>
+      <div style=" padding:5px;">
+       <label style="color:white; " >Height(cm)</label>
+      </div>
+      <div style="padding:5px;">
+       <input type="text" style="background: #ffffff; color:black; width:200px; height:30px; border-radius: 4px; padding:2px;"  name="height" size="10">
+      </div>
+      <div style="padding:5px;">
+       <input type="button" style="background: #1abc9c; color:black; width:150px; height:60px; border-radius: 4px; padding:2px; fontSize:5px;" value="Calculate" data-type="index" />
+       <input type="reset" style="background: #e74c3c; color:black; width:150px; height:60px; border-radius: 4px; padding:2px; fontSize:5px;" value="Reset" />
+      </div>
+      <div style=" padding:5px;">
+       <label style="color:white; " >Your BMI Index</label>
+      </div>
+      <div style="padding:5px;">
+        <input type="text" style="background: #ffffff; color:black; width:200px; height:30px; border-radius: 4px; padding:2px;" name="bmi" size="10">
+      </div>
+      <div style=" padding:5px;">
+       <label style="color:white; ">Your Status</label>
+      </div>
+      <div style=" padding:5px;">
+        <input type="text" style="background: #ffffff; color:black; width:90%; height:30px; border-radius: 4px; padding:2px;" name="meaning" size="2"><br />
+      </div>
+
+    </form>
+
+    <div class="app-name" id="calc">Calculator</div>
+
+
+    <FORM NAME="calculator">
+
+
+    <textarea NAME="display" rows="3" id="display" ></textarea>
+
+
+    <div class="keypad-row" id="calc1">
+      <input type="button" id="clear"       value="C"   data-type="clear"  />
+      <input type="button" id="button-key"  value="×"   data-type="operator"   />
+      <input type="button" id="button-key"  value="÷"   data-type="operator"   />
+      <input type="button" id="delete"      value="Del" data-type="delete" />
+    </div>
+
+    <div class="keypad-row" id="calc2">
+      <input type="button" id="button-key" value="7"  data-type="key-value"/>
+      <input type="button" id="button-key" value="8"  data-type="key-value"/>
+      <input type="button" id="button-key" value="9"  data-type="key-value"/>
+      <input type="button" id="button-key" value="-"  data-type="operator" />
+    </div>
+
+    <div class="keypad-row" id="calc3">
+      <input type="button" id="button-key" value="4" data-type="key-value"/>
+      <input type="button" id="button-key" value="5" data-type="key-value" />
+      <input type="button" id="button-key" value="6" data-type="key-value" />
+      <input type="button" id="button-key" value="+" data-type="operator"/>
+    </div>
+
+    <div class="keypad-row" id="calc4">
+      <input type="button" id="button-key" value="1" data-type="key-value"/>
+      <input type="button" id="button-key" value="2" data-type="key-value"/>
+      <input type="button" id="button-key" value="3" data-type="key-value" />
+      <input type="button" id="button-key" value="%" data-type="operator"/>
+    </div>
+
+    <div class="keypad-row" id="calc5">
+      <input type="button" id="button-key" value="." data-type="key-value"/>
+      <input type="button" id="button-key" value="0" data-type="key-value"/>
+      <input type="button" id="button-key" value="^" data-type="operator"/>
+      <input type="button" id="button-key" value="=" data-type="compute" />
+    </div>
+    <div class="keypad-row">
+      <input type="button" id="button-key" value="BMI" data-type="bmi" />
+      <input type="button" id="button-key" value="CAL" data-type="cal" />
+    </div>
+</body>
+<script type="text/javascript" src="Calculator-JavaScript.js"></script>
 </html>
