@@ -186,7 +186,7 @@ calculate: function calculate(input,sign){
         document.bmiForm.meaning.value = "That you are healthy."
         }
       if(finalBmi > 25){
-        document.bmiForm.meaning.value = "That you have overweight."
+        document.bmiForm.meaning.value = "That you are overweight."
         }
        }
       else{
