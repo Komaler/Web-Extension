@@ -1,4 +1,11 @@
-# addon-minimal-digital-clock
-A firefox extension that adds minimal digital clock in toolbar.
+# Open Source / Web Extension for Firefox
 
-see https://addons.mozilla.org/en/firefox/addon/minimal-digital-clock/
+A firefox extensions:
+* adds minimal digital clock in toolbar - Ryan 
+* Set reminder extension  --------------- Komaler
+* Calculator extension ------------------ Maanoj Kumar
+
+
+
+
+
