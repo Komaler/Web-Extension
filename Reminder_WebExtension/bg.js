@@ -42,7 +42,7 @@ browser.alarms.onAlarm.addListener((alarm) => {
             "type": "basic",
             "iconUrl": "icons/logo_64.png",
             "title": "Reminder",
-            "message": res.tslReminders[alarm.name] || 'PING'
+            "message": res.tslReminders[alarm.name] ||'No ! Reminder Message'
         });
         const reminders = res.tslReminders
         delete reminders[alarm.name]
