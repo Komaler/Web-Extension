@@ -1,7 +1,7 @@
 # Open Source / Web Extension for Firefox
 
 A firefox extensions:
-* adds minimal digital clock in toolbar - Ryan 
+* adds additional time widgets such as digital clock and a calendar to the existing stopwatch - Ryan 
 * Set reminder extension  --------------- Komaler
 * Calculator extension ------------------ Maanoj Kumar
 
